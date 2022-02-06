@@ -1,6 +1,6 @@
 {
   "name": "simaware-desktop",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "An electron.js wrapper for SimAware.ca, flight simulation's premier online flight tracking software.",
   "main": "main.js",
   "scripts": {
