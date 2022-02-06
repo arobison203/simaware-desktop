@@ -1,18 +1,26 @@
 {
   "name": "simaware-desktop",
   "version": "1.0.0",
-  "description": "",
+  "description": "An electron.js wrapper for SimAware.ca, flight simulation's premier online flight tracking software.",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
   },
-  "author": "",
+  "author": "Alexandra Robison",
   "license": "MIT",
   "devDependencies": {
+    "electron-builder": "^22.14.13",
     "electron": "^17.0.0"
   },
   "dependencies": {
     "electron-config": "^2.0.0"
+  },
+  "build": {
+    "appId": "cc.robison.simaware-desktop",
+    "productName": "SimAware.ca Desktop",
+    "artifactName": "SimAwareDesktopInstall.${ext}"
   }
 }
